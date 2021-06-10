@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+  }
+    
+  body{
+    margin: 0;
+    font-family: 'Montserrat';
+  }
+    
+  a{
+    text-decoration: none;
+}
+  
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+header {
+    height: 48px;
+    width: 100%;
+    background-color: #0087ce;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.logo {
+    height: 28px;
+}
+
+.header-logo {
+    float: left;
+    margin: 8px 0px;
+}
+
+.menu_nav {
+    float: right;
+    margin-right: -25px;
+    line-height: 48px;
+    position: relative;
+}
+
+.menu_nav a {
+    padding: 0 25px;
+    color: rgb(214, 214, 214);
+    font-weight: bolder;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+
+.menu_nav a:hover {
+    color: white;
+}
+  
+.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 8px 0;
+}
+  
+.hero #overlay {
+    background: rgba(0, 135, 206, 0.8);
+    height: 700px;
+    width: 100%;
+    position: absolute;
+}
+  
+.hero {
+    padding: 0;
+    height: 700px;
+    width: 100%;
+    background-image: url(img/back-hero.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+  
+.hero h1 {
+    opacity: 0.9;
+    font-size: 48px;
+    letter-spacing: 4px;
+    padding: 160px 0 4px 0;
+}
+  
+.logo_hero {
+    width: auto;
+    height: 225px;
+    margin: 2rem auto;
+}
+  
+.part-2-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.part-2-description {
+    display: block;
+    margin-top: 20%;
+    color: #0087CE;
+    font-weight: bold;
+    font-size: 16px;
+}
+  
+.part-2-tittle {
+    font-weight: 500;
+}
+  
+.part-2-box-half {
+    width: 100%;
+    padding: 0px 300px;
+}
+  
+.part-2-margin-content {
+    margin-top: 50px !important;
+}
+  
+.part-2-image {
+    opacity: 0.5;
+    width: 70px;
+    height: 70px;
+    -webkit-transition: width 0.17s ease-out, height 0.17s ease-out;
+    -moz-transition: width 0.17s ease-out, height 0.17s ease-out;
+    -o-transition: width 0.17s ease-out, height 0.17s ease-out;
+    transition: width 0.17s ease-out, height 0.17s ease-out;
+}
+  
+.part-2-image:hover {
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+}
+  
+.part-2-image:hover ~ .part-2-description{
+    color: #737679 !important;
+}
+  
+.part-2-img-box {
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+}
+  
+.part-2-container {
+    padding-top: 70px !important;
+    background: #F5F7F8;
+}
+  
+.contents {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left : 200px;
+    padding-right: 50px;
+    background: url(https://www.boxclever.ca/public/img/logo_pattern.jpg) left top repeat;
+}
+  
+.first-content {
+    width: 600px;
+    height: 400px;
+    perspective: 1000px;
+    float: left;
+    margin-right: 20px;
+}
+  
+.content-holder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+}
+  
+.first-content:hover .content-holder {
+    transform: translateZ(-200px) translate(0, -50%) rotateX(90deg)
+}
+  
+.first-content .content-image, .content-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.first-content .content-text {
+    transform: translate(0, 100%) rotateX(-90deg);
+    transform-origin: top;
+    background: #001f22;
+    color: white;
+    padding: 50px;
+}
+  
+.content {
+    width: 300px;
+    height: 180px;
+    margin: 0 0 20px 20px;
+    perspective: 1000px;
+    float: left;
+}
+  
+.content .content-image .content-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.content .content-text {
+    transform:  rotateX(-90deg);
+    transform-origin: top;
+    background: #403e3f;
+    color: white;
+    padding: 20px;
+}
+  
+.content:hover .content-holder {
+    transform: translateZ(-90px) translate(0, -50%) rotateX(90deg)
+}
+  
+.clear {
+    clear: both;
+}
+  
+#we-build-together {
+    padding: 100px 250px;
+    text-align: center;
+}
+  
+  /* bagian 5 */
+  
+.blog{
+    width: 100%;
+    background-color: #001f22;
+    padding: 40px 75px;
+    gap: 10px;
+}
+  
+.blog_title{
+    color: #0087ce;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.blog .latest__blog{
+    padding: 25px;
+}
+  
+.post a{
+    text-decoration: none;
+    color: white;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    padding: 5px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.post a .date{
+    color: #b3b3b3;
+    font-weight: 700;
+    text-align: center;
+}
+  
+.post a .date .month{
+    font-size: 15px;
+}
+  
+.post a .date .day{
+    font-size: 20px;
+}
+  
+.post a:hover{
+    background-color: #0087ce;
+    border-radius: 10px;
+    color: white;
+}
+  
+.blog .testimonial__content{
+    padding: 25px;
+}
+  
+.blog .testimonial__content .testimonial__text{
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    color: white;
+}
+  
+.blog .testimonial__content .testimonial__author{
+    color: white;
+    text-align: right;
+    font-size: 18px;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+  
+footer{
+    text-align: center;
+    line-height: 25px;
+    background-color: #F1F5F6;
+    color: #7C8083;
+    width: 100%;
+    padding: 30px;
+    box-shadow: 0px 3px 5px #888888;
+}
+  
+footer h3{
+    font-style: italic;
+}
+  
+footer p{
+    font-style: italic;
+}
+  
+footer a{
+    text-decoration: none;
+    color: #7C8083;
+}
+  
+footer a img{
+    width: 20px;
+    margin: 5px 5px 0 0;
+}
+  
+footer a:hover{
+    opacity: 0.7;
+}
+  
+  /* bagian 5 */

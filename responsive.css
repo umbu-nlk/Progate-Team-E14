@@ -1,0 +1,108 @@
+/* ----------------------------Ukuran Desktop----------------------------------- */
+@media all and (min-width: 1170px) and (max-width:1980px){
+    .menu-icon{
+      display: none;
+    }
+  }
+  
+  /* ----------------------------Ukuran Tablet------------------------------------ */
+  @media all and (max-width: 1000px){
+    .menu-icon{
+    display: none;
+    }
+    .hero h1 {
+    font-size: 32px;
+    }
+
+    .part-2-box-half {
+        padding: 0px !important;
+    }
+
+    .part-2-img-box {
+        padding: 0px !important;
+    }
+
+    .part-2-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .first-content, .content-image img, .content-text {
+      align-items: center;
+      padding: 0px;
+      margin: 0px 0px 20px 20px;
+      width: 300px;
+      height: 180px;
+      display: flex;
+    }
+  }
+
+  @media screen and (min-width: 800px){
+  .blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .post a{
+    padding: 10px;
+    line-height: 35px;
+    font-size: 17px;
+  }
+
+  .post a .date{
+  margin-right: 15px;
+  }
+
+  .post a .date .month{
+    font-size: 20px;
+  }
+
+  .post a .date .day{
+    font-size: 30px;
+  }
+}
+  
+  
+  /* --------------------------Ukuran Smartphone----------------------------------- */
+  @media all and (max-width: 670px){
+    .menu_nav {
+      display: none;
+    }
+
+    .menu-icon {
+      display: block;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+    }
+    
+    .part-2-box-half {
+        padding: 0px !important;
+    }
+
+    .part-2-img-box {
+        padding: 0px !important;
+    }
+
+    .part-2-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contents {
+      padding-left: 0px;
+    }
+    .first-content, .content-image img, .content-text {
+      align-items: left;
+      padding: 0px;
+      margin: 0px 0px 20px 20px;
+      width: 300px;
+      height: 180px;
+      display: flex;
+    }
+  }
